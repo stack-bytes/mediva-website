@@ -1,26 +1,26 @@
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
 
-const navbar = () => {
+const Navbar = () => {
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setMobileDrawerOpen(!mobileDrawerOpen);
+  };
+
   return (
-    <nav className="berder-b sticky top-0 z-50 border-neutral-100 py-4 backdrop-blur">
-      <div className="container relative mx-auto px-4 text-sm">
+    <nav className="sticky top-0 z-50 border-b border-neutral-700/80 py-3 backdrop-blur-lg">
+      <div className="container relative mx-auto px-4 lg:text-sm">
         <div className="flex items-center justify-between">
           <div className="flex flex-shrink-0 items-center">
-            <img
-              className="ml-2 mr-2 h-10 w-10 rounded-md"
-              src={logo}
-              alt="logo"
-            />
-            <span className="bg-gradient-to-r from-red-700 to-red-300 bg-clip-text text-xl tracking-tight text-transparent">
+            <img className="mr-2 h-10 w-10" src={logo} alt="Logo" />
+            <span className="text-xl tracking-tight sm:text-sm lg:text-xl">
               Mediva
-              <span className="text-right text-sm font-thin text-neutral-800">
-                {" "}
-                by StackBytes
-              </span>
             </span>
           </div>
-          <ul className="ml-14 mr-2 hidden space-x-8 lg:flex">
+          <ul className="ml-14 hidden space-x-12 lg:flex">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
@@ -32,10 +32,30 @@ const navbar = () => {
               </li>
             ))}
           </ul>
+
+          <div className="flex-col justify-end md:flex lg:hidden">
+            <button onClick={toggleNavbar}>
+              {mobileDrawerOpen ? <X /> : <Menu />}
+            </button>
+          </div>
         </div>
+        {mobileDrawerOpen && (
+          <div className="fixed right-0 z-20 flex w-full flex-col items-center justify-center bg-neutral-100 p-12 lg:hidden">
+            <ul>
+              {navItems.map((item, index) => (
+                <li
+                  key={index}
+                  className="mt-2 rounded-md border border-red-500 px-3 py-2 hover:bg-red-400"
+                >
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );
 };
 
-export default navbar;
+export default Navbar;
