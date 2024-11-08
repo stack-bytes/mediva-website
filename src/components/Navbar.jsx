@@ -18,6 +18,10 @@ const Navbar = () => {
             <img className="mr-2 h-10 w-10" src={logo} alt="Logo" />
             <span className="text-xl tracking-tight sm:text-sm lg:text-xl">
               Mediva
+              <span className="text-sm font-thin tracking-tight sm:text-sm lg:text-xl">
+                {" "}
+                by StackBytes
+              </span>
             </span>
           </div>
           <ul className="ml-14 hidden space-x-12 lg:flex">
