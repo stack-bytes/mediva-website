@@ -8,7 +8,7 @@ const FeatureSection = () => {
           Features
         </span>
         <h2 className="mt-10 text-xl tracking-wide text-neutral-700 sm:text-3xl lg:mt-10 lg:text-3xl">
-          Mediva va pune la dispozitie:
+          Mediva aims to bring you easily accesable healthcare
         </h2>
       </div>
       <div className="mt-10 flex flex-wrap lg:mt-20">
