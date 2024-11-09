@@ -56,39 +56,39 @@ export const testimonials = [
 export const features = [
   {
     icon: <CheckCircle2 />,
-    text: "Feature #1",
+    text: "Direct Connection to a Doctor",
     description:
-      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+      "Provides users with instant access to licensed doctors, allowing them to discuss symptoms, ask health-related questions, and receive medical advice without visiting a clinic. Doctors are available 24/7 for immediate assistance",
   },
   {
     icon: <CheckCircle2 />,
-    text: "Feature #2",
+    text: "Online Prescriptions",
     description:
-      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+      "Enables users to receive prescriptions digitally after a consultation, which they can use to purchase medications at any partnered pharmacy or have them delivered. Users can also track their prescription history and set reminders for refills",
   },
   {
     icon: <CheckCircle2 />,
-    text: "Feature #3",
+    text: "Interactive Map",
     description:
-      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+      "An in-app map feature that shows nearby hospitals, clinics, pharmacies, and urgent care centers based on the user's location. The map includes real-time navigation, facility information, hours of operation, and estimated wait times where available",
   },
   {
     icon: <CheckCircle2 />,
-    text: "Feature #4",
+    text: "Support Groups",
     description:
-      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+      "Offers information on local and online support groups for various medical conditions and mental health issues. Users can search for support groups by topic, location, and meeting times, with options for virtual attendance when available",
   },
   {
     icon: <CheckCircle2 />,
-    text: "Feature #5",
+    text: "Illness reports",
     description:
-      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+      "A section dedicated to the latest information on illnesses, including symptoms, treatment options, and preventive measures. Users can view reports on trending illnesses, seasonal outbreaks, and access educational content tailored to their health needs",
   },
   {
     icon: <CheckCircle2 />,
-    text: "Feature #6",
+    text: "User rating",
     description:
-      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+      "Allows users to view ratings and reviews of doctors based on previous consultations. Ratings cover bedside manner, response time, communication skills, and overall satisfaction, helping users select a doctor who best fits their needs",
   },
 ];
 
