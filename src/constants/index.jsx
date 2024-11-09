@@ -8,10 +8,10 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Home", href: "#" },
-  { label: "About Us", href: "#" },
-  { label: "Info", href: "#" },
-  { label: "Download", href: "#" },
+  { label: "Home", href: "#", button: false },
+  { label: "About Us", href: "#", button: false },
+  { label: "Info", href: "#", button: false},
+  { label: "Download", href: "#" , button: true},
 ];
 
 export const testimonials = [

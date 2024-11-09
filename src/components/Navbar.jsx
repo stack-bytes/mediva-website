@@ -11,10 +11,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-neutral-400/80 py-3 backdrop-blur-lg">
-      <div className="container relative mx-auto px-4 lg:text-sm">
+    <nav className="sticky top-0 z-50 border-b border-neutral-400/80 py-3 backdrop-blur-lg flex items-center justify-center">
+      <div className="container relative pl-5 pr-4 lg:text-sm ">
         <div className="flex items-center justify-between">
-          <div className="flex flex-shrink-0 items-center">
+          <div className="flex flex-shrink-0 items-center lg:mr-10">
             <img className="mr-2 h-10 w-10" src={logo} alt="Logo" />
             <span className="text-xl tracking-tight sm:text-sm lg:text-xl">
               Mediva
@@ -24,12 +24,12 @@ const Navbar = () => {
               </span>
             </span>
           </div>
-          <ul className="ml-14 hidden space-x-12 lg:flex">
+          <ul className="ml-14 hidden space-x-12 lg:flex lg:ml-10">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
                   href={item.href}
-                  className="rounded-md border border-red-500 px-3 py-2 hover:bg-red-400"
+                  className={`rounded-md  ${item.button ? "border border-red-500 hover:bg-red-400 transition-all" : ""} px-3 py-2 `}
                 >
                   {item.label}
                 </a>

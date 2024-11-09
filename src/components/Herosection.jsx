@@ -1,7 +1,7 @@
 const Herosection = () => {
   return (
-    <div className="mt-4 flex flex-col items-center">
-      <h1 className="bg-gradient-to-r from-red-700 to-red-300 bg-clip-text text-center text-8xl tracking-wide text-transparent">
+    <div className="mt-40 flex flex-col items-center h-[100vh] justify-start">
+      <h1 className="bg-gradient-to-r from-red-700 to-red-500 bg-clip-text text-center text-[12rem] font-extrabold tracking-wide text-transparent">
         Mediva
       </h1>
       <p className="mt-5 max-w-4xl text-center text-2xl text-neutral-500">
