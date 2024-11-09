@@ -1,4 +1,4 @@
-import { ArrowDown, Download, Info } from "lucide-react";
+import { Download, Info } from "lucide-react";
 
 const Herosection = () => {
   return (
@@ -18,7 +18,7 @@ const Herosection = () => {
           Download
         </a>
         <a
-          onClick={() => scrollTo({ left: 0, top: 1200, behavior: "smooth" })}
+          onClick={() => scrollTo({ left: 0, top: 1000, behavior: "smooth" })}
           className="mx-3 flex h-[5rem] w-[20rem] items-center justify-center gap-x-5 rounded-full border-2 border-red-500 bg-gradient-to-r px-4 py-3 text-center text-2xl font-bold text-red-500 hover:bg-red-400 hover:text-white"
         >
           <Info />
