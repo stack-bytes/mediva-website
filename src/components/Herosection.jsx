@@ -24,10 +24,6 @@ const Herosection = () => {
           <Info />
           Information
         </a>
-        <ArrowDown className="absolute bottom-5" width={50} height={50}  onClick={() => scrollTo({ left: 0, top: 1200, behavior: "smooth" })}/>
-        <div class="absolute -left-96 w-[50rem] -top-32 h-[50rem] bg-red-600 blur-3xl opacity-30 rounded-full"></div>
-        <div class="absolute -right-96 w-[50rem] -bottom-32 h-[50rem] bg-red-600 blur-3xl opacity-30 rounded-full"></div>
-     
       </div>
     </div>
   );
