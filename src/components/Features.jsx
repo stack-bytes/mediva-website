@@ -7,7 +7,7 @@ const FeatureSection = () => {
         <span className="h-6 rounded-full bg-neutral-100 px-2 py-1 text-sm font-medium uppercase text-red-500">
           Feature
         </span>
-        <h2 className="mt-10 text-3xl tracking-wide text-neutral-700 sm:text-5xl lg:mt-20 lg:text-6xl">
+        <h2 className="mt-10 text-xl tracking-wide text-neutral-700 sm:text-3xl lg:mt-20 lg:text-3xl">
           Mediva va pune la dispozitie:
         </h2>
       </div>
