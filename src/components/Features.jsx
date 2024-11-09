@@ -2,12 +2,12 @@ import { features } from "../constants";
 
 const FeatureSection = () => {
   return (
-    <div className="relative mt-20 min-h-[800px] border-b border-neutral-800">
+    <div className="relative mt-10 min-h-[800px] border-b border-neutral-800">
       <div className="text-center">
-        <span className="h-6 rounded-full bg-neutral-100 px-2 py-1 text-sm font-medium uppercase text-red-500">
+        <span className="h-6 rounded-full bg-white px-2 py-1 text-sm font-medium uppercase text-red-500">
           Feature
         </span>
-        <h2 className="mt-10 text-xl tracking-wide text-neutral-700 sm:text-3xl lg:mt-20 lg:text-3xl">
+        <h2 className="mt-10 text-xl tracking-wide text-neutral-700 sm:text-3xl lg:mt-10 lg:text-3xl">
           Mediva va pune la dispozitie:
         </h2>
       </div>
