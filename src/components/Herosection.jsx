@@ -1,5 +1,5 @@
 import { Download, Info } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Herosection = () => {
   const [showOverlay, setShowOverlay] = useState(false);
@@ -8,8 +8,8 @@ const Herosection = () => {
     setShowOverlay(true);
     setTimeout(() => {
       setShowOverlay(false);
-    }, 5000); // Hide the overlay after 3 seconds
-  };
+    }, 5000);
+  }; // Hide the overlay after 3 seconds
 
   return (
     <div className="mt-20 flex h-[100vh] flex-col items-center justify-start">
@@ -39,7 +39,7 @@ const Herosection = () => {
       </div>
       {showOverlay && (
         <div className="overlay">
-          <div className="overlay-message rounded-full bg-gradient-to-r from-red-700 to-red-500 px-8 py-4 text-3xl text-white sm:text-4xl lg:text-5xl">
+          <div className="overlay-message rounded-full bg-gradient-to-r from-red-700 to-red-500 px-12 py-6 text-2xl text-white sm:text-3xl lg:text-4xl">
             Coming soon!
           </div>
         </div>
