@@ -29,7 +29,7 @@ const Navbar = () => {
               <li key={index}>
                 <a
                   href={item.href}
-                  onClick={()=>item.clicked()}
+                  onClick={() => item.clicked()}
                   className={`rounded-md ${item.button ? "border border-red-500 transition-all hover:bg-red-400" : ""} px-3 py-2`}
                 >
                   {item.label}
@@ -48,14 +48,14 @@ const Navbar = () => {
           <div className="fixed right-0 z-20 flex w-full flex-col items-center justify-center bg-neutral-100 p-12 lg:hidden">
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="mt-5 mb-5 text-center">
-                <a
-                  href={item.href}
-                  className={`rounded-md ${item.button ? "border border-red-500 transition-all hover:bg-red-400" : ""} px-3 py-2`}
-                >
-                  {item.label}
-                </a>
-              </li>
+                <li key={index} className="mb-5 mt-5 text-center">
+                  <a
+                    href={item.href}
+                    className={`rounded-md ${item.button ? "border border-red-500 transition-all hover:bg-red-400" : ""} px-3 py-2`}
+                  >
+                    {item.label}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
